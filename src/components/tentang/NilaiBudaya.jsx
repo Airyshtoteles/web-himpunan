@@ -6,7 +6,7 @@ const nilaiData = [
     label: 'Nilai',
     nama: 'Progresif',
     isi: 'Memiliki pola pikir yang maju, terbuka terhadap inovasi, dan terus berusaha untuk berkembang serta melakukan perbaikan.',
-    ukuran: 'col-span-2 row-span-2',
+    ukuran: 'sm:col-span-2 sm:row-span-2',
     warna: 'from-green-600 to-green-700',
     ikon: (
       <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -18,7 +18,7 @@ const nilaiData = [
     label: 'Nilai',
     nama: 'Kolaboratif',
     isi: 'Memahami bahwa hasil terbaik dicapai melalui kombinasi keahlian dan sumber daya yang beragam.',
-    ukuran: 'col-span-2',
+    ukuran: 'sm:col-span-2',
     warna: 'from-green-500 to-green-600',
     ikon: (
       <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -81,7 +81,7 @@ const budayaData = [
   {
     nama: 'Adaptif',
     isi: 'Mudah menyesuaikan diri dengan perubahan, situasi, atau kondisi baru secara efektif.',
-    ukuran: 'col-span-2',
+    ukuran: 'sm:col-span-2',
     warna: 'from-violet-400 to-violet-500',
     ikonWarnaTeks: 'text-white',
     ikon: (

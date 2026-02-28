@@ -28,7 +28,7 @@ const divisiData = [
   {
     nama: 'Kerohanian',
     namaLengkap: 'Divisi Kerohanian',
-    deskripsi: 'Membina dan mengembangkan kader-kader organisasi melalui program pelatihan kepemimpinan dan organisasi.',
+    deskripsi: 'Membina kehidupan beragama dan spiritual anggota melalui kajian rutin, peringatan hari besar keagamaan, dan kegiatan kerohanian lainnya.',
     warna: 'from-amber-500 to-amber-600',
     ikon: (
       <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
@@ -39,7 +39,7 @@ const divisiData = [
   {
     nama: 'Iptek',
     namaLengkap: 'Ilmu Pengetahuan & Teknologi',
-    deskripsi: 'Meningkatkan kualitas dan kompetensi anggota melalui pelatihan soft skill dan hard skill di bidang TI.',
+    deskripsi: 'Mengembangkan wawasan ilmu pengetahuan dan teknologi anggota melalui workshop, seminar teknologi, serta pengembangan proyek-proyek inovatif di bidang TI.',
     warna: 'from-purple-500 to-purple-600',
     ikon: (
       <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
@@ -50,7 +50,7 @@ const divisiData = [
   {
     nama: 'Olahraga',
     namaLengkap: 'Divisi Olahraga',
-    deskripsi: 'Memfasilitasi pengembangan minat dan bakat anggota di bidang seni, olahraga, dan kreativitas.',
+    deskripsi: 'Memfasilitasi kegiatan olahraga dan kebugaran anggota melalui turnamen, latihan rutin, dan event olahraga untuk menjaga kesehatan jasmani.',
     warna: 'from-rose-500 to-rose-600',
     ikon: (
       <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
@@ -61,7 +61,7 @@ const divisiData = [
   {
     nama: 'Bismit',
     namaLengkap: 'Bisnis dan Kemitraan',
-    deskripsi: 'Menyelenggarakan kegiatan sosial dan kemanusiaan sebagai wujud kepedulian terhadap masyarakat sekitar.',
+    deskripsi: 'Mengembangkan jejaring bisnis dan kemitraan dengan pihak eksternal melalui kerja sama, sponsorship, dan kegiatan kewirausahaan untuk mendukung program HIMA TI.',
     warna: 'from-teal-500 to-teal-600',
     ikon: (
       <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">

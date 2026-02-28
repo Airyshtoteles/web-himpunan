@@ -1,7 +1,7 @@
 import Hero from './Hero';
 import HighlightKegiatan from './HighlightKegiatan';
 import Statistik from './Statistik';
-import SambutanKetua from './SambutanKetua';
+import PenjelasanLogo from './PenjelasanLogo';
 
 export default function Beranda() {
   return (
@@ -22,7 +22,7 @@ export default function Beranda() {
         {/* Divider */}
         <div className="w-full h-px bg-gradient-to-r from-transparent via-green-300/50 to-transparent" />
 
-        <SambutanKetua />
+        <PenjelasanLogo />
       </div>
     </section>
   );

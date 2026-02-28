@@ -25,6 +25,12 @@
   height: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.flip-card-front {
+  transform: rotateX(0deg);
 }
 
 .flip-card-back {
@@ -70,6 +76,10 @@
   -webkit-backface-visibility: hidden;
   border-radius: 1rem;
   overflow: hidden;
+}
+
+.program-flip-card-front {
+  transform: rotateX(0deg);
 }
 
 .program-flip-card-back {

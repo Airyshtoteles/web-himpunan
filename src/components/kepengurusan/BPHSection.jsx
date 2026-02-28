@@ -1,11 +1,14 @@
 import { useEffect, useRef } from 'react';
 import { animate } from 'animejs';
+import logo from '../../assets/logo1.png';
 
 const bphData = [
-  { nama: 'Muhammad Fauzan', jabatan: 'Ketua Umum', inisial: 'MF' },
-  { nama: 'Siti Nurhaliza', jabatan: 'Wakil Ketua', inisial: 'SN' },
-  { nama: 'Ahmad Rizki', jabatan: 'Sekretaris Umum', inisial: 'AR' },
-  { nama: 'Dewi Anggraeni', jabatan: 'Bendahara Umum', inisial: 'DA' },
+  { nama: 'Romi Ahmad Al-Malik', jabatan: 'Ketua' },
+  { nama: 'Muhammad Raihan Dhenda', jabatan: 'Wakil Ketua' },
+  { nama: 'Nayla Nur Alvi', jabatan: 'Sekretaris I' },
+  { nama: 'Muhammad Haqil Abdillah', jabatan: 'Sekretaris II' },
+  { nama: 'Yeyen Ai Nurhidayati', jabatan: 'Bendahara I' },
+  { nama: 'Salwa Hamdunah', jabatan: 'Bendahara II' },
 ];
 
 export default function BPHSection() {
@@ -82,25 +85,36 @@ export default function BPHSection() {
       </div>
 
       {/* BPH Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {bphData.map((member, idx) => (
           <div
             key={idx}
             ref={(el) => (cardRefs.current[idx] = el)}
             data-idx={idx}
-            className="relative overflow-hidden bg-white/30 backdrop-blur-xl border border-white/50 shadow-[0_8px_32px_0_rgba(31,38,135,0.1)] rounded-2xl p-6 sm:p-8 text-center cursor-default"
+            className="relative overflow-hidden rounded-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.15)] h-80 sm:h-96 group cursor-default"
           >
-            {/* Top accent */}
-            <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-green-600 to-yellow-400" />
-            <div className="absolute -top-10 -right-10 w-24 h-24 bg-green-200/15 rounded-full blur-2xl pointer-events-none" />
-
-            {/* Avatar circle */}
-            <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full bg-gradient-to-br from-green-600 to-green-700 flex items-center justify-center shadow-xl mb-4">
-              <span className="text-2xl sm:text-3xl font-bold text-white">{member.inisial}</span>
+            {/* Photo Background (dummy logo) */}
+            <div className="absolute inset-0 bg-gradient-to-br from-green-100 to-green-50 flex items-center justify-center">
+              <img
+                src={logo}
+                alt="Foto pengurus"
+                className="w-32 h-32 sm:w-40 sm:h-40 object-contain opacity-20 group-hover:opacity-25 transition-opacity duration-500"
+              />
             </div>
 
-            <h3 className="text-lg font-bold text-green-900">{member.nama}</h3>
-            <p className="text-sm text-green-600 font-medium mt-1">{member.jabatan}</p>
+            {/* Top accent */}
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-600 to-yellow-400 z-10" />
+
+            {/* Full overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-green-900/90 via-green-900/40 to-green-900/10" />
+
+            {/* Name centered on photo */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4">
+              <h3 className="text-xl sm:text-2xl font-extrabold text-white drop-shadow-lg">{member.nama}</h3>
+              <div className="mt-3 bg-white/15 backdrop-blur-sm px-5 py-1.5 rounded-full">
+                <p className="text-sm sm:text-base text-yellow-300 font-bold">{member.jabatan}</p>
+              </div>
+            </div>
           </div>
         ))}
       </div>

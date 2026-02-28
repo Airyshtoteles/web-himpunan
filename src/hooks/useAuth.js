@@ -1,8 +1,8 @@
 import { useState, useCallback } from 'react';
 
 const AUTH_KEY = 'himati_auth';
-const VALID_USERNAME = 'admin';
-const VALID_PASSWORD = 'admin123';
+const VALID_USERNAME = 'KabinetPerkasa';
+const VALID_PASSWORD = 'AdminPerkasa26';
 
 export default function useAuth() {
   const [isAuthenticated, setIsAuthenticated] = useState(
